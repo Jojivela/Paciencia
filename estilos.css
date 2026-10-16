@@ -1,0 +1,47 @@
+/* 1. SELECTOR UNIVERSAL (*)
+   Aplica a TODOS los elementos del documento.
+   Muy usado para reiniciar márgenes y bordes (CSS Reset). */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* 2. SELECTOR DE ETIQUETA O TIPO (p)
+   Aplica a todos los elementos que sean de esa etiqueta HTML específica. */
+p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* 3. SELECTOR DE CLASE (.clase)
+   Aplica a cualquier elemento que tenga el atributo class="destacado".
+   Se pueden reutilizar en múltiples elementos. */
+.destacado {
+  background-color: #ffeaa7;
+  border-left: 4px solid #fdcb6e;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* 4. SELECTOR DE IDENTIFICACIÓN O ID (#id)
+   Aplica al elemento único que tenga el atributo id="titulo-principal".
+   Solo debe haber un ID con el mismo nombre por página. */
+#titulo-principal {
+  color: #2d3436;
+  text-align: center;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+/* 5. SELECTOR DESCENDENTE (padre hijo)
+   Aplica a los elementos <p> que estén DENTRO de un elemento con class="contenedor". */
+.contenedor p {
+  color: #0984e3;
+  font-style: italic;
+  background-color: #f1f2f6;
+  padding: 8px;
+}
